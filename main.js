@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api')
 require('dotenv').config()
 const {tiktok_downloader}=require('./request')
-const TOKEN =process.env.TOKEN
+const TOKEN=process.env.TOKEN
 console.log(TOKEN)
 
 const bot = new TelegramBot(TOKEN, {polling: true});
