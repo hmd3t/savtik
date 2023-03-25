@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const {tiktok_downloader}=require('./request')
 const token = '6033926042:AAGsDRxH8wzXqfHoC50_6In-9gIt2ZK9mb8';
 
-const bot = new TelegramBot(TOKEN, {polling: true});
+const bot = new TelegramBot(token, {polling: true});
 
 
 bot.on('message', async(message) => {
